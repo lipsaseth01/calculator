@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(30, 2, 39);
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(50, 17, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 22px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }       
+        nav ul li a:hover{
+            color: rgb(197, 70, 206);
+        }
+
+        .left{
+            color: rgb(238, 220, 234);
+            font-size: 1.5rem;
+            
+
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            margin: 22px;
+        }
+        .firstsection >div{
+            width: 30%;
+        }
+        .rightsection{
+            
+            width: 34px;
+            font-size: 2rem;
+            justify-content: center;
+            margin: 10%;
+        }
+        .leftsection img{
+            width: 100%;
+            margin: 90px 0;
+            justify-content: center;
+            
+        }
+        .lavender{
+            color:   rgb(76, 12, 121);
+        }
+        #element{
+            font-style: italic;
+            color: rgb(102, 28, 155);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Lipsa's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="/"> Home</a></li>
+                    <li><a href="/"> About</a></li>
+                    <li><a href="/">Skills</a></li>
+                    <li><a href="/">Social</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <img src="np.png" alt="">
+            </div>
+            <div class="rightsection">
+                Hello World!
+                <div>My name is <span class="lavender"</span> Lipsa Seth</div>
+                <div> and I am a passionate web developer</div>
+                <span id="element"></span>
+            </div>
+            
+
+
+        </section>
+             
+
+        
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['web Developer','Graphics Designer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script>
+</body> 
+
+</html>

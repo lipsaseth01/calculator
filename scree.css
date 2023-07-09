@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(156, 74, 233);
+    padding: 40px;
+    line-height: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.accordian{
+    background-color: rgb(177, 135, 217);
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon{
+    margin: 20px;
+    transition: transform 3s;
+    transform: rotate(-180deg);
+}
+.icon.active{
+    transform: rotate(-180deg) ;
+}
+.answer{
+    color: rgb(79, 57, 57);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 3s;
+}
+ 

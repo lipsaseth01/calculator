@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #container {
+      text-align: center;
+    }
+
+    #balloon {
+      width: 100px;
+      height: 150px;
+      background-color: red;
+      border-radius: 50%;
+      margin: 50px auto;
+      transition: height 0.5s;
+    }
+
+    #message {
+      visibility: hidden;
+      position: relative;
+      top: -70px;
+      font-size: 20px;
+      color: rgb(138, 20, 20);
+    }
+
+    #button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    #button:focus {
+      outline: none;
+    }
+
+    #button:active #balloon {
+      height: 300px;
+    }
+
+    #button:active #message {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="balloon"></div>
+    <div id="message">Hello!</div>
+    <button id="button">Click to Inflate</button>
+  </div>
+</body>
+</html>

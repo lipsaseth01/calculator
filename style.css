@@ -1,0 +1,31 @@
+#balloon {
+    width: 60px;
+    height: 90px;
+    background-color: #FF6384;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    animation: bounce 1s infinite;
+  }
+  
+  @keyframes bounce {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: 200px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+  
+  #burst {
+    background-color: #FF6384;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    color: blue;
+    display: none;
+  }
+  
